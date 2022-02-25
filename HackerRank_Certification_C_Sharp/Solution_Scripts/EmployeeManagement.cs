@@ -19,15 +19,6 @@ namespace HackerRank_Certification_C_Sharp
             return EmployeesDict;
         }
 
-        public static Dictionary<string, int> CountOfEmployeesForEachCompany(List<Employee> employees)
-        {
-
-        }
-
-        public static Dictionary<string, Employee> OldestAgeForEachCompany(List<Employee> employees)
-        {
-
-        }
 
         public static void Main()
         {
@@ -54,15 +45,6 @@ namespace HackerRank_Certification_C_Sharp
                 Console.WriteLine($"The average age for company {emp.Key} is {emp.Value}");
             }
 
-            foreach (var emp in CountOfEmployeesForEachCompany(employees))
-            {
-                Console.WriteLine($"The count of employees for company {emp.Key} is {emp.Value}");
-            }
-
-            foreach (var emp in OldestAgeForEachCompany(employees))
-            {
-                Console.WriteLine($"The oldest employee of company {emp.Key} is {emp.Value.FirstName} {emp.Value.LastName} having age {emp.Value.Age}");
-            }
         }
     }
 
